@@ -68,7 +68,7 @@ app.controller('MainController', function ($rootScope, $scope) {
     $scope.email = '';
 
     $scope.login = function () {
-        alert('Вы заполнили все поля');
+        alert('Вы не заполнили все поля');
     };
 
 });
