@@ -29,11 +29,11 @@ app.run(function ($transform) {
 //
 app.config(function ($routeProvider) {
     $routeProvider.when('/', {
-        templateUrl: 'home.html',
+        templateUrl: 'list.html',
         reloadOnSearch: false
     });
-    $routeProvider.when('/forms', {
-        templateUrl: 'forms.html',
+    $routeProvider.when('/login', {
+        templateUrl: 'login.html',
         reloadOnSearch: false
     });
 });
@@ -62,7 +62,7 @@ app.controller('MainController', function ($rootScope, $scope) {
     });
 
     //
-    // 'Forms' screen
+    // 'Login' screen
     //
     $scope.rememberMe = true;
     $scope.email = '';
