@@ -28,12 +28,16 @@ app.run(function ($transform) {
 // in order to avoid unwanted routing.
 //
 app.config(function ($routeProvider) {
-    $routeProvider.when('/', {
-        templateUrl: 'list.html',
+    $routeProvider.when('', {
+        templateUrl: 'list.php',
         reloadOnSearch: false
     });
     $routeProvider.when('/login', {
         templateUrl: 'login.html',
+        reloadOnSearch: false
+    });
+	    $routeProvider.when('/reg', {
+        templateUrl: 'reg.html',
         reloadOnSearch: false
     });
 });
@@ -68,7 +72,7 @@ app.controller('MainController', function ($rootScope, $scope) {
     $scope.email = '';
 
     $scope.login = function () {
-        alert('Вы не заполнили все поля');
+        alert('Вы заполнили все поля');
     };
 
 });
