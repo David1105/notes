@@ -1,5 +1,6 @@
 <?php
     require_once('main.html');
+	$mid = $_GET["mid"];
 	$id = $_GET["id"];
 	$mysqli = mysqli_connect("127.0.0.1", "root", "", "webtech");
 	$mysqli->set_charset("utf8");
@@ -8,7 +9,6 @@
 	WHERE uid = '1' AND id = '".$id."';");
 	$row = $result->fetch_assoc();
 	$text = $row['note'];
-	$mid = $row['mid'];
 	$mysqli->close();
 	echo '						<li><form action="delete.php" method="post">
 								<input type="hidden" name="id" value="'.$id.'">

@@ -1,0 +1,17 @@
+        <div class="app"
+            ui-swipe-right="Ui.turnOn('uiSidebarLeft')"
+            ui-swipe-left="Ui.turnOff('uiSidebarLeft')">
+            <!-- Navbars -->
+            <div class="navbar navbar-app navbar-absolute-top">
+                <div class="navbar-brand navbar-brand-center" ui-yield-to="title">
+					<form method="post" action="search.php">
+						<input type="search" name="search" placeholder="Поиск..."/>
+						<button type="submit" name="submit"><i class="fa fa-search"></i></button>
+					</form>
+                </div>
+                <div class="btn-group pull-left">
+                    <div ui-toggle="uiSidebarLeft" class="btn sidebar-toggle" >
+                        <i class="fa fa-bars"></i>
+                    </div>
+                </div>
+            </div>
