@@ -32,11 +32,13 @@
                                 <div class="panel-body">
 									<form method="post" action="save.php">								<input type="hidden" name="id" value='.$id.'>
 										<input type="hidden" name="mid" value='.$mid.'>
-										<textarea rows="15" width=100% name="text" placeholder="Введите текст заметки">'.$text.'</textarea>
+										<textarea rows="15" width=10% name="text" placeholder="Введите текст заметки" style="overflow-x:hidden;">'.$text.'</textarea>
 										<div class="navbar-absolute-bottom">
 											<center><button type="submit"
 													ui-turn-on="modal1"
-													class="btn btn-default">Вернуться</button>
+													class="btn btn-default">Сохранить</button>
+													<div onclick="history.back(-1)"
+													class="btn btn-default">Вернуться</div>
 											</center>
 										</div>
 									</form>
