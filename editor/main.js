@@ -65,14 +65,4 @@ app.controller('MainController', function ($rootScope, $scope) {
         $rootScope.loading = false;
     });
 
-    //
-    // 'Login' screen
-    //
-    $scope.rememberMe = true;
-    $scope.email = '';
-
-    $scope.login = function () {
-        alert('Вы заполнили все поля');
-    };
-
 });
