@@ -1,5 +1,5 @@
 <?php
-    require_once('main.html');
+    require_once('top.html');
 	$mid = $_GET["mid"];
 	$id = $_GET["id"];
 	$mysqli = mysqli_connect("127.0.0.1", "root", "", "webtech");
