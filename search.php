@@ -1,5 +1,5 @@
 <?php
-    require_once('main.html');
+    require_once('top.html');
 	$mysqli = mysqli_connect("127.0.0.1", "root", "", "webtech");
 	$mysqli->set_charset("utf8");
 	$mid = 0;
