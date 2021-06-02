@@ -62,8 +62,8 @@
 								ui-turn-off="modal1">&times;</button>
 						</div>
 						<div class="modal-body">
-							<a href="/editorf/create.php?mid='.$mid.'&id=0"><img width=50% src="/img/folder.gif" alt="создать папку"></a>
-							<a href="/editor/?mid='.$mid.'&id=0"><img width=50% src="/img/note.gif" alt="создать заметку"></a>
+							<a href="/editorf/create.php?mid='.$mid.'&id=0"><img width=45% src="/img/folder.gif" alt="создать папку"></a>
+							<a href="/editor/?mid='.$mid.'&id=0"><img width=45% src="/img/note.gif" alt="создать заметку"></a>
 							<p align="left" style="color:grey;">создать папку</p><p align="right" style="color:grey;">создать заметку</p>
 						</div>
 					</div>
